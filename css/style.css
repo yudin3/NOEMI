@@ -1,0 +1,800 @@
+﻿html{
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+
+  html{
+    font-size: 62.5%;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1200px){
+
+  html{
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+@font-face{
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans_Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "JosefinSans-Bold";
+  src: url("../fonts/JosefinSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "MrsSheppards-Regular";
+  src: url("../fonts/MrsSheppards-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: "OpenSans-Italic";
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body{
+  font-family: "OpenSans";
+  font-size: 1.5rem;
+  margin: 0;
+  color: #131313;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  margin: 0 0 2rem 0;
+  line-height: 1.4;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
+.title{
+  margin: 0;
+  text-transform: uppercase;
+  font-family: OpenSans-Bold;
+  text-align: center;
+}
+
+.button{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border: none;
+
+  font-size: 1.4rem;
+  font-family: "Raleway-Bold";
+  color: #ddd3b4;
+  text-transform: uppercase;
+
+  
+  outline: none;
+  cursor: pointer;
+  
+  transition: var(--base-animation);
+  
+
+  background-color: #b59f5b;
+}
+
+.button:hover, .button:focus{
+	color: white;
+	background-color: #131313;
+}
+
+.gold{
+  color: #b59f5b;
+}
+
+.main-container{
+  box-sizing: border-box;
+  max-width: 1680px;
+  position: relative;
+
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+:root{
+	--base-animation: color .5s ease-out, background-color .5s ease-out;
+}
+
+@media screen and (max-width: 768px){
+	
+	.main-container{
+		padding-left: 1rem;
+		padding-right: 1rem; 
+	}
+
+}
+
+.flex-container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header{
+	font-family: "OpenSans-Bold";
+}
+
+.header__container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.header__menu{
+	flex-wrap: wrap;
+}
+
+.menu{
+	width: 70%;
+}
+
+.menu-left{
+	width: 30%;
+	justify-content: flex-end;
+}
+
+.menu__item{
+	display: inline-block;
+	font-size: 1.4rem;
+	color: inherit;
+	padding-left: 1.4%;
+	padding-right: 1.4%;
+	text-transform: uppercase;
+	transition: var(--base-animation);
+}
+
+.header__menu-item{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.menu__item:hover, .menu__item:focus{
+	color: white;
+	background-color: #131313;
+}
+
+.header__logo{
+  font-family: JosefinSans-Bold;
+  font-size: 8rem;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+  letter-spacing: 1rem;
+}
+
+/*@media screen and (max-width:768px){
+	
+	.menu{
+	  width: 100%;
+	  justify-content: space-around;
+	}
+
+	.menu-left{
+	  width: 100%;
+	  justify-content: space-between;
+	}
+	
+	.menu__item{
+		font-size: 2.8rem;
+	}
+}*/
+
+@media screen and (max-width: 768px){
+	
+	.header__menu{
+	  display: none;
+	}
+
+}
+
+.articles{
+	margin-bottom: 6rem;
+}
+
+.articles__column{
+  padding: 16rem 2.4rem 4rem;
+  margin-right: 0.5rem;
+  width: 32.8%;
+  position: relative;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 36rem;
+  box-sizing: border-box;
+}
+
+.articles__lifestyle{
+  background-image: url("../images/preview-post-1.png");
+}
+
+.articles__health{
+  background-image: url("../images/preview-post-2.png");
+}
+
+.articles__beauty{
+  background-image: url("../images/preview-post-3.png");
+}
+
+.articles__container{
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+	
+	.articles__container{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.articles__column{
+	  width: 100%;
+	  margin: 0 0 2rem 0;
+	}
+}
+
+.articles__column:last-child{
+  margin-right: 0;
+}
+
+.preview__content{
+  border: 3px solid #b59f5b;
+  box-sizing: border-box;
+}
+
+.preview__header{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.preview__description{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: JosefinSans-Bold;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.preview__footer{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 1.4rem 1rem;
+  color: #ada7a2;
+}
+
+.main-section{
+	flex-wrap: wrap;
+	padding-left: 17rem;
+	padding-right: 13rem;
+	margin-bottom: 2rem;
+}
+
+.main__column{
+  width: 60%;
+  margin-right: 10rem;
+}
+
+.aside__column{
+  width: 20%;
+}
+
+.post{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 760px;
+  margin-bottom: 8rem;
+}
+
+.post:last-child{
+	margin-bottom: 0;
+}
+
+
+
+.post__column{
+	width: 48%;
+	margin-right: 1rem;
+}
+
+
+
+.post__column:last-child{
+	margin-right: 0;
+}
+
+.preview-post{
+    position: relative;
+    width: 120%;
+    left: -6rem;
+    top: -3rem;
+}
+
+@media screen and (max-width: 768px){
+
+	.flex-container{
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.aside__column{
+	  width: 100%
+	}
+
+	.main__column{
+	  width: 100%;
+	  margin: 0
+	}
+
+	.post__column{
+		width: 100%;
+		margin: 0;
+		text-align: center
+	}
+
+	.preview-post{
+    position: static;
+    width: 100%;
+	margin-top: 2rem;
+}
+	
+}
+
+.preview__content-post{
+	padding-left: 7rem;
+}
+
+.preview__title-post{
+	text-align: start;
+}
+
+.preview__description-post{
+	color: black;
+	text-align: start;
+	padding-left: 0;
+}
+
+.preview__footer-post{
+	padding-left: 0;
+}
+
+.post__description{
+	text-align: start;
+	font-family: "OpenSans";
+	padding-left: 2rem;
+	margin-top: 2rem;
+}
+
+.post__description:after{
+	display: block;
+	content: "";
+	margin-top: 2rem;
+	border-bottom: 5px dotted black;
+	width: 2rem;
+}
+
+.post__row{
+	width: 56%;
+	margin-top: 1rem;
+}
+
+@media screen and (max-width:768px){
+	
+	.post__row{
+	width: 100%;
+	}
+	
+	.post__description:after{
+	width: 3rem;
+}
+
+}
+
+.post__footer{
+	justify-content: space-between;
+	width: 100%;
+	padding: 2rem 2rem 1rem 0.5rem;
+	box-sizing: border-box;
+}
+
+.post__row:after{
+	display: block;
+	content: "";
+	clear: both;
+	width: 100%;
+	border-bottom: 3px solid #d1c9d6;
+	margin-top: 1rem;
+}
+
+.post__social-item{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	color: inherit;
+	transition: var(--base-animation);
+}
+
+.section{
+	margin-top: 3.5rem;
+}
+
+.about-me{
+	position: relative;
+	margin-top: 10rem;
+	padding: 0 3rem 3rem;
+	border: 3px solid #ede8d7;
+	text-align: center;
+}
+
+@media screen and (max-width:768px){
+	
+	.about-me{
+		margin-top: 26rem;
+	}
+
+}
+
+.about-me::before{
+    display: inline-block;
+    content: "";
+    /* text-align: center; */
+    /* position: absolute; */
+    /* width: 100%; */
+    /* max-width: 19.4rem; */
+    /* height: 19.4rem; */
+    /* top: -10.5rem; */
+    /* left: -50%; */
+    /* top: 50%; */
+    padding-top: 100%;
+    padding-right: 100%;
+    /* margin-top: -20.5rem; */
+    margin-bottom: -40%;
+    transform: translate(0, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/about-me.png);
+}
+
+.about-me__header{
+	margin-bottom: 2rem;
+}
+
+.section__header{
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.about-me__description{
+	font-family: "OpenSans-Italic";
+	margin-bottom: 3rem;
+}
+
+.about-me__follow{
+	font-family: "MrsSheppards-Regular";
+	font-size: 2.4rem;
+	margin-bottom: 3rem;
+}
+
+.about-me__social{
+	justify-content: space-around;
+}
+
+.about-me__social-item{
+	color: #131313;
+	transition: var(--base-animation);
+}
+
+.about-me__social-item:hover, .about-me__social-item:focus{
+	color: #b59f5b;
+}
+
+.section__header:after{
+	display: inline-block;
+	content: "";
+	width: 65px;
+	border-bottom: 3px solid #ede8d7;
+	margin-top: 1.5rem;
+	
+}
+
+.field{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  outline: 0;
+  border: none;
+  background-color: #f4f7f6;
+  font-family: "OpenSans";
+}
+
+.form__row{
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.form__row:first-child{
+	margin-top: 0rem;
+}
+
+.newsletter__label{
+	position: absolute;
+    left: -9999px;
+}
+
+.newsletter__button{
+	padding: 2rem 0;
+	width: 100%;
+	text-align: center;
+}
+
+.themes__row{
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+.themes__row:first-child{
+	margin-top: 0;
+}
+
+.themes__item{
+	width: 30%;
+}
+
+/*.themes__img{
+	display: block;
+}*/
+
+@media screen and (max-width: 768px){
+	.themes__item{
+		text-align: center;
+	}
+	
+	.themes__img{
+		display: inline-block;
+	}
+}
+
+.categories__link{
+	font-size: 1.4rem;
+	color: #0a0a0a;
+}
+
+.categories__row{
+	margin-top: 1rem;
+}
+
+.categories__row:first-child{
+	margin-top: 0rem;
+}
+
+.categories__row:after{
+	display: block;
+	content: "";
+	border-bottom: 1px solid #d1c9d6;
+	margin-top: 1rem;
+}
+
+.categories__number{
+	font-size: 1.2rem;
+	font-family: "Raleway";
+}
+
+.recent_posts__item{
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width:768px){
+	
+	.recent_posts__item{
+	justify-content: flex-start;
+	}
+}
+
+.recent_posts__item:first-child{
+	margin-top: 0rem;
+}
+
+.recent_posts__image {
+    height: 7rem;
+    width: 24%;
+    margin-right: 1rem;
+}
+
+.recent_posts__description{
+	width: 66%;
+}
+
+.recent_posts__title{
+	text-align: start;
+	font-size: 1.4rem;
+}
+
+.recent_posts__form{
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+
+.recent_posts__input{
+	width: 82%;
+	height: 5rem;
+}
+
+.recent_posts__button{
+	width: 18%;
+	height: 5rem;
+}
+
+.banner__img{
+	width: 100%;
+	min-height: 36rem;
+	text-align: center;
+}
+
+.tags__content{
+	flex-wrap: wrap;
+}
+
+.tags__item{
+	padding: 0.6rem 1.3rem;
+	border: 2px solid #ede8d7;
+	max-width: 32%;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	transition: var(--base-animation);
+}
+
+.tags__link{
+	color: inherit;
+	font-size: 1.15rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.tags__item:hover, .tags__item:focus{
+	background-color: #131313;
+	color: #ddd3b4;
+	
+}
+
+.footer{
+	text-align: center;
+}
+
+.instagram__title{
+	font-family: "MrsSheppards-Regular";
+	font-size: 1.4rem;
+	color: cdbf91;
+	margin-top: 1rem;
+}
+
+.instagram__photos{
+	margin-top: 2rem;
+}
+
+.instagram{
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
+@media screen and (max-width:768px){
+	
+	.instagram{
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+}
+
+
+.instagram__item{
+	margin-right: 1rem;
+}
+
+.instagram__item:last-child{
+	margin-right: 0;
+}
+
+.footer__menu{
+	padding: 3rem 0;
+	background-color: f4f7f6;
+	margin-top: 2rem;
+}
+
+.footer__menu-item{
+	font-size: 2rem;
+	color: 3d3e3d;
+	line-height: 2;
+	padding: 1%;
+}
+
+@media screen and (max-width: 768px){
+	
+	.footer__menu-item{
+			padding-left: 4.4%;
+			padding-right: 4.4%;
+	}
+
+}
+
+.footer__menu-item:last-child{
+	margin-right: 0;
+}
+
+.footer__tagline{
+	font-family: "MrsSheppards-Regular";
+	margin-top: 3rem;
+	font-size: 3rem;
+	color: 3d3e3d;
+}
+
+.footer__copyright{
+	margin: 3rem 0;
+	font-size: 1.2rem;
+}
+
