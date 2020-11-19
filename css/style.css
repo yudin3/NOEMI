@@ -490,14 +490,6 @@ p:last-child{
 	text-align: center;
 }
 
-@media screen and (max-width:768px){
-	
-	.about-me{
-		margin-top: 26rem;
-	}
-
-}
-
 .about-me::before{
     display: inline-block;
     content: "";
@@ -518,6 +510,29 @@ p:last-child{
     background-repeat: no-repeat;
     background-image: url(../images/about-me.png);
 }
+
+@media screen and (max-width:768px){
+	
+	.about-me{
+		margin-top: 20rem;
+	}
+
+	.about-me::before{
+	padding-top: 50%;
+		padding-right: 50%;
+		margin-top: -2.5rem;
+		margin-bottom: -20%;
+	}
+}
+
+@media screen and (max-width:420px){
+
+	.about-me{
+		margin-top: 20rem;
+	}
+}
+	
+
 
 .about-me__header{
 	margin-bottom: 2rem;
