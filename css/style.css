@@ -514,7 +514,7 @@ p:last-child{
 @media screen and (max-width:768px){
 	
 	.about-me{
-		margin-top: 20rem;
+		margin-top: 26rem;
 	}
 
 	.about-me::before{
@@ -524,15 +524,6 @@ p:last-child{
 		margin-bottom: -20%;
 	}
 }
-
-@media screen and (max-width:420px){
-
-	.about-me{
-		margin-top: 20rem;
-	}
-}
-	
-
 
 .about-me__header{
 	margin-bottom: 2rem;
