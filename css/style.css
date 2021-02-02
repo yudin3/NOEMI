@@ -717,8 +717,7 @@ p:last-child{
 
 .instagram__photos{
 	margin-top: 2rem;
-	margin-left: auto;
-	margin-right: auto;
+	justify-content: space-between;
 }
 
 .instagram{
